@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WaraPTBackend.Models;
+using waraPT_backend.Models;
+using waraPT_Backend.Models;
 
-namespace WaraPTBackend.Data;
+namespace waraPT_Backend.Data;
 
 public class WaraDbContext : DbContext
 {

@@ -1,4 +1,4 @@
-﻿namespace WaraPTBackend.Models;
+﻿namespace waraPT_Backend.Models;
 
 public class User
 {

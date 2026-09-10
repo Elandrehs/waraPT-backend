@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
-using WaraPTBackend.Data;
+using waraPT_Backend.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
