@@ -20,7 +20,7 @@ public class WorkersController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetWorkers([FromQuery] string? dni)
     {
-        var workers = await _context.Workers
+        var workers = await _context.WorkerList
             .FromSqlInterpolated($"CALL sp_ListWorkers({dni})")
             .ToListAsync();
 
@@ -35,4 +35,5 @@ public class WorkersController : ControllerBase
 
         return Ok(new { message = "Worker created successfully" });
     }
+    
 }

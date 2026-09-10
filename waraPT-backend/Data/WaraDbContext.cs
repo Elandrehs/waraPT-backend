@@ -14,9 +14,11 @@ public class WaraDbContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<Worker> Workers { get; set; }
     public DbSet<LoginResultDto> LoginResults { get; set; }
+    public DbSet<WorkerListDto> WorkerList { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<LoginResultDto>().HasNoKey();
+        modelBuilder.Entity<WorkerListDto>().HasNoKey();
     }
 }
